@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Brain Games 2.0</string>
+    <string name="help">Help</string>
+    <string name="start_game">Start Game</string>
+    <string name="high_scores">High scores</string>
+    <string name="play_now">Play now</string>
+    <string name="tic_tac_toe">"1. A simple connect three game.\n\n"
+        "2. You need to connect your chosen character in a way that they are three consecutive in number either vertically, horizontally or diagonally.\n\n"
+        "3. The one who does it first wins the game."
+    </string>
+
+    <string name="sequence">"1. You have to remember the sequence of the provided number series and replicate it using given keyboard as it is to increase your score.\n\n"
+"2. When satisfied with writing sequence, press the button at bottom right to finalize it and check if you were correct or not.\n\n"
+"3. However if not satisfied and if you have committed a mistake while writing, feel free to use the backspace or clear button. Using these have no effects on your scores. However once submitted, you can't change your answer.\n\n"
+"4. The length of the sequence keeps on increasing as your score increases.\n\n"
+"5. The game continues till you give the correct answers. Giving wrong answer ends the game."
+</string>
+
+    <string name="mental_maths">"1. Lets check how good you are at Math.\n\n"
+"2. No, don\'t worry, if you find yourself a noobie with Maths, we have two modes for you, the easy and the difficult one. Easy has smaller numbers with plus as the operation. However difficult mode has subtraction and multiplication as bonus.\n\n"
+"3. You will have 5 sec to guess or calculate the answer.\n\n"
+"4. You will have 20 questions put up in front of you in easy mode and 30 in difficult mode.\n\n"
+"5. Try to get maximum of them as correct.\n\n\n"
+
+"Let's see if you make it to the perfect 30 mark!"</string>
+
+    <string name="match_the_pair">"1. Match the pair is a memory game where you aim to open the same characters cards\' pair.\n\n"
+"2. The game consists of two players who play and try to match the pairs of characters by swapping pictures and opening them by tapping on the cards.\n\n"
+"3. The person who guesses the greater number of pair wins the game.\n\n\n"
+
+"So let's see who has the better memory!"</string>
+
+    <string name="scribble">"1. The game is also popularly called as the \'pictionary\'. This is a drawing version of \'dumbsherads\'. Basically there are minimum four players in this game where players are divided into two teams.\n\n"
+"2. One of the team members from team A gives a word to team B\'s member. The team B\'s guy has to draw the given word and the other team B members have to guess what word team A members might have given to their team mate. Guess work is done using the drawing which the team mate makes.\n\n"
+"3. It is not allowed to write anything or speak up anything. Any unfair means of cheating or action to provide a hint is not allowed.\n\n"
+"4. The above two points are repeated with team B members giving a word to team A's member.\n\n"
+"5. This process goes on and on unless the game is aborted.\n\n"
+"6. The two of the team which guesses the more words wins the game."
+</string>
+
+    <string name="guess_the_celeb">"1. There are some celebs that you have guess about in this game.\n\n"
+"2. There will be some information about the celebs and you have to guess who they are.\n\n"
+"3. There will be in total 15 celebs put before you.\n\n"
+"4. Hence try to guess all of them as correct. The best you could score is a 15.\n\n\n"
+
+"Note:- If you find your favourite celeb here, feel free to take a screenshot:)"
+ </string>
+    <string name="easy">Easy</string>
+    <string name="difficult">Difficult</string>
+    <string name="difficult_mode">Difficult Mode</string>
+    <string name="easy_mode">Easy Mode</string>
+    <string name="guess_the_celeb_game_name">Guess The Celeb</string>
+    <string name="seqeunce_game_name">Seqeunce</string>
+    <string name="match_the_pair_game_name">Match The Pair</string>
+    <string name="mental_maths_game_name">Mental Maths</string>
+    <string name="play_with_friends">Play With Friends</string>
+    <string name="describe">Type this secretly. Hide this word from your friends near you. Don\'t show them the word or they may guess it easily.</string>
+    <string name="done">Done</string>
+    <string name="your_word_here">Your word here</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_game_blue_theme"
+    tools:context=".GuessTheCeleb.GuessTheCelebGameActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/score_guess"
+                android:textAlignment="center"
+                android:fontFamily="@font/paytone"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score:\n0/15" />
+
+            <ImageView
+                android:id="@+id/celeb_photo"
+                android:layout_marginTop="30dp"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="200dp"
+                tools:srcCompat="@drawable/questionmark" />
+
+            <TextView
+                android:id="@+id/celeb_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Celeb description"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/paytone"
+                android:textColor="@color/white"
+                android:padding="10dp"/>
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                app:rowCount="4"
+                android:paddingTop="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                app:columnCount="1"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/celeb_option1"
+                    android:onClick="checkCelebAnswer"
+                    android:tag="1"
+                    android:layout_margin="5dp"
+                    android:text="Celeb 1"
+                    app:layout_gravity="fill"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"/>
+                <Button
+                    android:id="@+id/celeb_option2"
+                    android:tag="2"
+                    android:onClick="checkCelebAnswer"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="Celeb 2"
+                    android:layout_margin="5dp"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"/>
+                <Button
+                    android:id="@+id/celeb_option3"
+                    android:tag="3"
+                    android:onClick="checkCelebAnswer"
+                    android:text="Celeb 3"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"/>
+                <Button
+                    android:id="@+id/celeb_option4"
+                    android:tag="4"
+                    android:onClick="checkCelebAnswer"
+                    android:background="@drawable/button_selector"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="Celeb 4"
+                    android:layout_margin="5dp"
+                    app:layout_gravity="fill"
+                    app:layout_rowWeight="1"
+                    app:layout_columnWeight="1"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

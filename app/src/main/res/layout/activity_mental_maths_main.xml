@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_game_blue_theme"
+    tools:context=".MentalMaths.MentalMathsMainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/mental_maths_game_name"
+        android:fontFamily="@font/paytone"
+        android:textSize="40sp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:fontFamily="@font/paytone"
+            android:id="@+id/start_mental_maths"
+            android:textAllCaps="false"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/play_now"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:fontFamily="@font/paytone"
+            android:id="@+id/high_score_mental_maths"
+            android:textAllCaps="false"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/high_scores"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_selector"/>
+
+        <Button
+            android:fontFamily="@font/paytone"
+            android:id="@+id/help_mental_maths"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:textAllCaps="false"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_selector"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
