@@ -14,7 +14,7 @@ import com.atandroidlabs.braingames20.R
 
 class TicTacToeGameActivity : AppCompatActivity() {
 
-    // 0 for cat 1 for puppy 2 for empty
+    // 0 for X 1 for O 2 for empty
     var gameState = intArrayOf(2, 2, 2, 2, 2, 2, 2, 2, 2)
     var winningPositions = arrayOf(
         intArrayOf(0, 1, 2),
@@ -49,11 +49,11 @@ class TicTacToeGameActivity : AppCompatActivity() {
             gameState[tappedCounter] = playerchance
             counter.translationY = -2000f
             if (playerchance == 0) {
-                counter.setImageResource(R.drawable.cat)
+                counter.setImageResource(R.drawable.xo_x)
                 counter.animate().translationYBy(2000f).duration = 100
                 playerchance = 1
             } else {
-                counter.setImageResource(R.drawable.puppy)
+                counter.setImageResource(R.drawable.xo_o)
                 counter.animate().translationYBy(2000f).duration = 100
                 playerchance = 0
             }
@@ -64,8 +64,8 @@ class TicTacToeGameActivity : AppCompatActivity() {
                     someoneWon = true
                     var winner = ""
                     winner = if (playerchance == 1) {
-                        "Cat"
-                    } else "Puppy"
+                        "X"
+                    } else "O"
                     val Won = findViewById<View>(R.id.hasWontextView) as TextView
                     Won.text = "$winner has won!"
                     val PlayAgain = findViewById<View>(R.id.playAgainButton) as Button
@@ -117,7 +117,6 @@ class TicTacToeGameActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tic_tac_toe_game)
-
 
     }
 }
