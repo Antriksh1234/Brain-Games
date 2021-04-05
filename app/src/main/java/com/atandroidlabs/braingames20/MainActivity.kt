@@ -14,7 +14,6 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
 
         val database: SQLiteDatabase = applicationContext.openOrCreateDatabase("games", Context.MODE_PRIVATE, null)
-        database.execSQL("CREATE TABLE IF NOT EXISTS celeb (name VARCHAR, score INTEGER)")
         database.execSQL("CREATE TABLE IF NOT EXISTS sequence (name VARCHAR, score INTEGER)")
         database.execSQL("CREATE TABLE IF NOT EXISTS mental_maths (name VARCHAR, mode VARCHAR, score INTEGER)")
 
@@ -22,7 +21,7 @@ class MainActivity : Activity() {
         gamesList.add(Game("Sequence", R.drawable.sequence_option))
         gamesList.add(Game("Match The Pair", R.drawable.matchthepair_option))
         gamesList.add(Game("Mental Maths", R.drawable.mental_maths))
-        gamesList.add(Game("Guess the Celeb", R.drawable.guesstheceleb_option))
+        //gamesList.add(Game("Guess the Celeb", R.drawable.guesstheceleb_option))
         gamesList.add(Game("What's The Word?", R.drawable.guesstheword_option))
         gamesList.add(Game("Tic Tac Toe", R.drawable.tictactoe_option))
 

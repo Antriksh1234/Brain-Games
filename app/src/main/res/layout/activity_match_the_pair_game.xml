@@ -8,32 +8,59 @@
     tools:context=".MatchThePair.MatchThePairGameActivity">
 
     <TextView
+        android:id="@+id/player1_heading"
+        android:text="Player 1"
+        android:textAlignment="center"
+        android:fontFamily="@font/paytone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
         android:id="@+id/player1_match"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:text="Player 1:\n0"
+        android:text="0"
         android:textColor="@android:color/white"
-        android:textSize="16sp"
+        android:textSize="28sp"
         android:fontFamily="@font/paytone"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/player1_heading"
+        app:layout_constraintEnd_toEndOf="@id/player1_heading"/>
 
     <TextView
-        android:id="@+id/player2_match"
+        android:id="@+id/player2_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="Player 2:\n0"
+        android:text="Player 2: "
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         android:fontFamily="@font/paytone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player2_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:fontFamily="@font/paytone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2_heading"
+        app:layout_constraintStart_toStartOf="@id/player2_heading"/>
 
     <androidx.gridlayout.widget.GridLayout
         android:layout_width="350dp"
@@ -552,17 +579,16 @@
             app:layout_gravity="fill"
             app:layout_row="5"
             app:layout_rowWeight="1" />
-
     </androidx.gridlayout.widget.GridLayout>
 
     <TextView
         android:id="@+id/turn_match"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="72dp"
         android:text="Player 1's turn"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="22sp"
         android:fontFamily="@font/paytone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -244,6 +244,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
         "FANTASTIC"
     )
     private var noOfWords: Int = 0
+    private lateinit var answerStatus: TextView
     private lateinit var databse: SQLiteDatabase
     private lateinit var currentWord: String
     private lateinit var answerArray: CharArray
@@ -253,6 +254,8 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
     private var chances = 8;
     private var rejectedString = "Rejected letters: "
     private lateinit var rejectedTextView: TextView
+    private var rightLetterArray = arrayOf("Good!", "Correct!", "Yes!", "Great!")
+    private var wrongLetterArray = arrayOf("Oops!", "Oh No!", "Guess again!", "Keep Trying!")
 
     override fun onBackPressed() {
         android.app.AlertDialog.Builder(this)
@@ -273,6 +276,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
     fun insertLetter(view: View) {
         val typedChar = view.tag.toString()[0]
         if (currentWord.contains(view.tag.toString())) {
+            setAnswerStatusText(true)
             for (i in answerArray.indices) {
                 if (typedChar == answerArray[i]) {
                     solveArray[i] = typedChar
@@ -289,9 +293,10 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
                 val handler = Handler()
                 handler.postDelayed({
                     selectAndOperateMode()
-                }, 1000)
+                }, 1500)
             }
         } else {
+            setAnswerStatusText(false)
             updateRejectedTextView(typedChar)
             chances--
             chanceImageViews[chances].setImageResource(R.drawable.ic_baseline_favorite_border_24)
@@ -301,6 +306,16 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "Chances over", Toast.LENGTH_SHORT).show()
                 showWordAlertDialog()
             }
+        }
+    }
+
+    private fun setAnswerStatusText(correct: Boolean) {
+        val random: Random = Random()
+        val index = random.nextInt(4)
+        if (correct) {
+            answerStatus.text = rightLetterArray[index]
+        } else {
+            answerStatus.text = wrongLetterArray[index]
         }
     }
 
@@ -363,6 +378,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
     }
 
     private fun operateOnAloneMode() {
+        answerStatus.text = ""
         currentWord = createCurrentWord()
         createAnsArray()
         createSolveArray()
@@ -377,7 +393,10 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
     private fun createSolveArray() {
         solveArray = CharArray(answerArray.size)
         for (i in answerArray.indices) {
-            solveArray[i] = '_'
+            if (answerArray[i] == 'A' || answerArray[i] == 'E' || answerArray[i] == 'I' || answerArray[i] == 'O' || answerArray[i] == 'U') {
+                solveArray[i] = answerArray[i]
+            } else
+                solveArray[i] = '_'
         }
     }
 
@@ -410,6 +429,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
         aloneMode = intent.getBooleanExtra("alone", true)
         wordTextView = findViewById(R.id.word_to_be_guessed)
         rejectedTextView = findViewById(R.id.rejected_letters)
+        answerStatus = findViewById(R.id.answer_status)
         rejectedTextView.text = rejectedString
         initImageViews()
 
@@ -435,6 +455,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
     }
 
     private fun operateOnFriendMode() {
+        answerStatus.text = ""
         showEnterWordDialog()
     }
 

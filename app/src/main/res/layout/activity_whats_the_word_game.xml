@@ -83,6 +83,18 @@
         android:textAllCaps="true" />
 
     <TextView
+        android:id="@+id/answer_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:fontFamily="@font/paytone"
+        android:layout_marginBottom="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rejected_letters"/>
+
+    <TextView
         android:id="@+id/rejected_letters"
         android:textColor="@color/white"
         android:layout_width="wrap_content"

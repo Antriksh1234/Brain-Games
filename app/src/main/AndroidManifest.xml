@@ -45,12 +45,6 @@
             android:name=".HelpActivity"
             android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
         <activity
-            android:name=".GuessTheCeleb.GuessTheCelebGameActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity
-            android:name=".GuessTheCeleb.GuessTheCelebMainActivity"
-            android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
-        <activity
             android:name=".TicTacToe.TicTacToeGameActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
@@ -58,7 +52,8 @@
             android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen" />
         <activity
             android:name=".SplashScreenActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -129,10 +129,10 @@ class MatchThePairGameActivity : AppCompatActivity() {
                 if (pos == map[flipped_position]) {
                     if (player1_chance) {
                         player1_score++
-                        player1_textView!!.text = "Player 1:\n$player1_score"
+                        player1_textView!!.text = "$player1_score"
                     } else {
                         player2_score++
-                        player2_textView!!.setText("Player 2:\n$player2_score")
+                        player2_textView!!.text = "$player2_score"
                     }
                     imageView.animate().translationYBy(2500f).duration = 500
                     imageViews[flipped_position]!!.animate().translationYBy(2500f).duration = 500
@@ -148,8 +148,8 @@ class MatchThePairGameActivity : AppCompatActivity() {
                     } else {
                         turn_textView!!.text = "Player 2's turn"
                     }
-                    imageView.setBackgroundResource(R.drawable.pair_background)
-                    imageViews[flipped_position]!!.setBackgroundResource(R.drawable.pair_background)
+                    imageView.setImageResource(R.drawable.pair_background)
+                    imageViews[flipped_position]!!.setImageResource(R.drawable.pair_background)
                     imageView.animate().rotationYBy(180f).duration = 500
                     imageViews[flipped_position]!!.animate().rotationYBy(180f).duration = 500
                 }
@@ -171,7 +171,7 @@ class MatchThePairGameActivity : AppCompatActivity() {
         currentCard = pos
         if (pos != flipped_position) {
             imageView.animate().rotationYBy(180f).duration = 300
-            imageView.setBackgroundResource(images_position[pos])
+            imageView.setImageResource(images_position[pos])
             val handler = Handler()
             handler.postDelayed({ checkForPair(imageView, pos) }, 1000)
         }

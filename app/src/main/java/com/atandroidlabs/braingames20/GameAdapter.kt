@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.atandroidlabs.braingames20.GuessTheCeleb.GuessTheCelebMainActivity
 import com.atandroidlabs.braingames20.MatchThePair.MatchThePairActivity
 import com.atandroidlabs.braingames20.MentalMaths.MentalMathsMainActivity
 import com.atandroidlabs.braingames20.Sequence.SequenceMainActivity
@@ -36,15 +35,15 @@ class GameAdapter(var context: Context, var games: ArrayList<Game>) :
                     //mental maths
                     intent = Intent(context, MentalMathsMainActivity::class.java)
                 }
+//                3 -> {
+//                    //guess the celeb
+//                    intent = Intent(context, GuessTheCelebMainActivity::class.java)
+//                }
                 3 -> {
-                    //guess the celeb
-                    intent = Intent(context, GuessTheCelebMainActivity::class.java)
-                }
-                4 -> {
                     //what's the word
                     intent = Intent(context, WhatsTheWordMainActivity::class.java)
                 }
-                5 -> {
+                4 -> {
                     //tic tac toe
                     intent = Intent(context, TicTacToeActivity::class.java)
                 }
@@ -53,7 +52,7 @@ class GameAdapter(var context: Context, var games: ArrayList<Game>) :
                     intent = Intent(context, TicTacToeActivity::class.java)
                 }
             }
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK;
             context.startActivity(intent)
         })
     }

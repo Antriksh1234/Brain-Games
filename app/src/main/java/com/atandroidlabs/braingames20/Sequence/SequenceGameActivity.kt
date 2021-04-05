@@ -19,11 +19,13 @@ class SequenceGameActivity : AppCompatActivity() {
     private var given_textView: TextView? = null;
     private var answer_textView:TextView? = null;
     private  var score_textView:TextView? = null
+    private lateinit var backButton: Button
+    private lateinit var clearButton: Button
     var timer: CountDownTimer? = null
     lateinit var b: Array<Button?>
     var high_score = 0
     var given_text: String? = null;
-    var answer_text:kotlin.String? = null
+    var answer_text:String? = null
     var scores = 0
     var random: Random? = null
 
@@ -142,12 +144,16 @@ class SequenceGameActivity : AppCompatActivity() {
         for (i in 0..9) {
             b[i]?.isEnabled = false
         }
+        clearButton.isEnabled = false
+        backButton.isEnabled = false
     }
 
     private fun enableAllButton() {
         for (i in 0..9) {
             b[i]?.isEnabled = true
         }
+        clearButton.isEnabled = true
+        backButton.isEnabled = true
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -157,7 +163,8 @@ class SequenceGameActivity : AppCompatActivity() {
         given_textView = findViewById(R.id.sequence_text)
         answer_textView = findViewById(R.id.answer_textView)
         score_textView = findViewById(R.id.sequence_score_textView)
-
+        backButton = findViewById(R.id.button1_back)
+        clearButton = findViewById(R.id.button1_clear)
         actionBar?.hide()
 
         b = arrayOfNulls<Button>(10)
@@ -181,7 +188,7 @@ class SequenceGameActivity : AppCompatActivity() {
 
         disableAllButton()
 
-        timer = object : CountDownTimer(5000, 1000) {
+        timer = object : CountDownTimer(3000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 //let the clock run
             }
