@@ -192,6 +192,7 @@ class MatchThePairGameActivity : AppCompatActivity() {
         }
         your_score_textView.text = finalVerdict
         builder.setView(view)
+        builder.setCancelable(false)
         val dialog = builder.create()
         ok_button.setOnClickListener {
             finish()

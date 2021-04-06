@@ -15,6 +15,7 @@
         android:layout_marginBottom="120dp"
         android:background="@drawable/xo_card"
         app:columnCount="3"
+        android:forceDarkAllowed="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +30,8 @@
             android:layout_height="93dp"
             android:layout_width="93dp"
             app:layout_column="0"
-            app:layout_row="0" />
+            app:layout_row="0"
+            android:forceDarkAllowed="false"/>
 
 
         <ImageView
@@ -39,7 +41,7 @@
             android:onClick="dropIn"
             android:tag="1"
             android:layout_marginStart="36dp"
-
+            android:forceDarkAllowed="false"
             app:layout_column="1"
             app:layout_row="0" />
 
@@ -51,7 +53,7 @@
             android:onClick="dropIn"
             android:tag="2"
             android:layout_marginStart="36dp"
-
+            android:forceDarkAllowed="false"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -63,6 +65,7 @@
             android:layout_height="93dp"
             android:layout_width="93dp"
             android:layout_marginTop="40dp"
+            android:forceDarkAllowed="false"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -75,6 +78,7 @@
             android:layout_marginTop="40dp"
             android:onClick="dropIn"
             android:tag="4"
+            android:forceDarkAllowed="false"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -87,6 +91,7 @@
             android:layout_marginStart="36dp"
             android:onClick="dropIn"
             android:tag="5"
+            android:forceDarkAllowed="false"
             app:layout_column="2"
             app:layout_row="1" />
 
@@ -98,6 +103,7 @@
             android:layout_marginTop="40dp"
             android:onClick="dropIn"
             android:tag="6"
+            android:forceDarkAllowed="false"
             app:layout_column="0"
             app:layout_row="2" />
 
@@ -109,6 +115,7 @@
             android:layout_marginTop="40dp"
             android:onClick="dropIn"
             android:tag="7"
+            android:forceDarkAllowed="false"
             app:layout_column="1"
             app:layout_row="2" />
 
@@ -120,6 +127,7 @@
             android:layout_marginTop="40dp"
             android:onClick="dropIn"
             android:tag="8"
+            android:forceDarkAllowed="false"
             app:layout_column="2"
             app:layout_row="2" />
     </androidx.gridlayout.widget.GridLayout>
@@ -142,10 +150,14 @@
 
     <Button
         android:id="@+id/playAgainButton"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
+        android:textColor="@color/white"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/button_selector"
         android:onClick="playOnceMore"
+        android:textAllCaps="false"
+        android:textSize="18sp"
         android:text="Play Again"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/gridlayout"
@@ -153,8 +165,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
-
-
+        app:layout_constraintVertical_bias="0.866"
+        android:forceDarkAllowed="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

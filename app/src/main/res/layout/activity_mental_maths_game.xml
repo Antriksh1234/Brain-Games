@@ -28,8 +28,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="0+0 = ?"
+        android:forceDarkAllowed="false"
         android:fontFamily="@font/paytone"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/black"
         android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +52,7 @@
         <Button
             android:onClick="check_answer_of_maths"
             android:id="@+id/maths_option1"
-
+            android:forceDarkAllowed="false"
             android:backgroundTint="@color/white"
             android:padding="30dp"
             android:text="23"
@@ -90,6 +91,7 @@
             app:layout_rowWeight="1" />
 
         <Button
+            android:forceDarkAllowed="false"
             android:onClick="check_answer_of_maths"
             android:id="@+id/maths_option4"
             android:layout_margin="0dp"
@@ -111,8 +113,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:textColor="@color/cardview_dark_background"
+        android:textColor="@color/black"
         android:text="Correct"
+        android:forceDarkAllowed="false"
         android:fontFamily="@font/paytone"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

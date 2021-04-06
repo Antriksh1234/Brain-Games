@@ -10,6 +10,7 @@
     <TextView
         android:id="@+id/player1_heading"
         android:text="Player 1"
+        android:textSize="16sp"
         android:textAlignment="center"
         android:fontFamily="@font/paytone"
         android:layout_width="wrap_content"
@@ -77,6 +78,7 @@
         app:rowCount="6">
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img1"
             android:tag="1"
             android:onClick="flipImage"
@@ -91,6 +93,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img2"
             android:tag="2"
             android:onClick="flipImage"
@@ -105,6 +108,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img3"
             android:onClick="flipImage"
             android:tag="3"
@@ -119,6 +123,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img4"
             android:onClick="flipImage"
             android:tag="4"
@@ -133,6 +138,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img5"
             android:tag="5"
             android:onClick="flipImage"
@@ -147,6 +153,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img6"
             android:onClick="flipImage"
             android:tag="6"
@@ -161,6 +168,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img7"
             android:onClick="flipImage"
             android:tag="7"
@@ -175,6 +183,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img8"
             android:onClick="flipImage"
             android:tag="8"
@@ -189,6 +198,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img9"
             android:onClick="flipImage"
             android:tag="9"
@@ -203,6 +213,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img10"
             android:onClick="flipImage"
             android:tag="10"
@@ -217,6 +228,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img11"
             android:onClick="flipImage"
             android:tag="11"
@@ -231,6 +243,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img12"
             android:onClick="flipImage"
             android:tag="12"
@@ -245,6 +258,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img13"
             android:onClick="flipImage"
             android:tag="13"
@@ -259,6 +273,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img14"
             android:onClick="flipImage"
             android:tag="14"
@@ -273,6 +288,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img15"
             android:onClick="flipImage"
             android:tag="15"
@@ -287,6 +303,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img16"
             android:onClick="flipImage"
             android:tag="16"
@@ -301,6 +318,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img17"
             android:onClick="flipImage"
             android:tag="17"
@@ -315,6 +333,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img18"
             android:onClick="flipImage"
             android:tag="18"
@@ -329,6 +348,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img19"
             android:onClick="flipImage"
             android:tag="19"
@@ -343,6 +363,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img20"
             android:onClick="flipImage"
             android:tag="20"
@@ -357,6 +378,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img21"
             android:onClick="flipImage"
             android:tag="21"
@@ -371,6 +393,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img22"
             android:onClick="flipImage"
             android:tag="22"
@@ -385,6 +408,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img28"
             android:onClick="flipImage"
             android:tag="28"
@@ -399,6 +423,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img25"
             android:tag="25"
             android:onClick="flipImage"
@@ -413,6 +438,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img26"
             android:tag="26"
             android:onClick="flipImage"
@@ -427,6 +453,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img27"
             android:onClick="flipImage"
             android:tag="27"
@@ -441,6 +468,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img29"
             android:onClick="flipImage"
             android:tag="29"
@@ -455,6 +483,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img30"
             android:onClick="flipImage"
             android:tag="30"
@@ -469,6 +498,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img23"
             android:onClick="flipImage"
             android:tag="23"
@@ -483,6 +513,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img24"
             android:onClick="flipImage"
             android:tag="24"
@@ -497,6 +528,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img31"
             android:onClick="flipImage"
             android:tag="31"
@@ -511,6 +543,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img32"
             android:onClick="flipImage"
             android:tag="32"
@@ -525,6 +558,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img33"
             android:onClick="flipImage"
             android:tag="33"
@@ -539,6 +573,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img35"
             android:onClick="flipImage"
             android:tag="35"
@@ -553,6 +588,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img36"
             android:onClick="flipImage"
             android:tag="36"
@@ -567,6 +603,7 @@
             app:layout_rowWeight="1" />
 
         <ImageView
+            android:forceDarkAllowed="false"
             android:id="@+id/img34"
             android:onClick="flipImage"
             android:tag="34"

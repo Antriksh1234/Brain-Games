@@ -123,7 +123,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="W"
@@ -133,7 +133,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="E"
@@ -143,7 +143,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="R"
@@ -153,7 +153,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="T"
@@ -163,7 +163,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="Y"
@@ -173,7 +173,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="U"
@@ -183,7 +183,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="I"
@@ -193,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="O"
@@ -203,7 +203,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
         <Button
             android:text="P"
@@ -213,7 +213,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
 
 
     </LinearLayout>
@@ -235,7 +235,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="S"
             android:tag="S"
@@ -244,7 +244,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="D"
             android:tag="D"
@@ -253,7 +253,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="F"
             android:tag="F"
@@ -262,7 +262,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="G"
             android:tag="G"
@@ -271,7 +271,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="H"
             android:tag="H"
@@ -280,7 +280,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="J"
             android:tag="J"
@@ -289,7 +289,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="K"
             android:tag="K"
@@ -298,7 +298,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="L"
             android:tag="L"
@@ -307,7 +307,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
     </LinearLayout>
     <LinearLayout
         android:weightSum="10"
@@ -328,7 +328,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="X"
             android:tag="X"
@@ -337,7 +337,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="C"
             android:tag="C"
@@ -346,7 +346,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="V"
             android:tag="V"
@@ -355,7 +355,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="B"
             android:tag="B"
@@ -364,7 +364,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="N"
             android:tag="N"
@@ -373,7 +373,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
         <Button
             android:text="M"
             android:tag="M"
@@ -382,6 +382,6 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:background="@drawable/button_selector_plain"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

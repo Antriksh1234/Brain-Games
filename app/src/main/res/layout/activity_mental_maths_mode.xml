@@ -17,7 +17,8 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:fontFamily="@font/paytone"
+            android:textStyle="bold"
+            android:textSize="18sp"
             android:background="@drawable/button_selector"
             android:id="@+id/play_easy_mental_maths"
             android:layout_width="200dp"
@@ -26,7 +27,8 @@
             android:text="@string/easy_mode"/>
 
         <Button
-            android:fontFamily="@font/paytone"
+            android:textStyle="bold"
+            android:textSize="18sp"
             android:id="@+id/play_difficult_mental_maths"
             android:layout_width="200dp"
             android:layout_height="wrap_content"

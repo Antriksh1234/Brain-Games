@@ -101,6 +101,7 @@ class MentalMathsGameActivity : AppCompatActivity() {
             score_textView.text = "Score: $no_of_correct"
             val save_button = view.findViewById<Button>(R.id.save_high_score)
             builder.setView(view)
+            builder.setCancelable(false)
             val dialog: AlertDialog = builder.create()
             save_button.setOnClickListener {
                 if (nameText.text.isEmpty()) {
@@ -129,6 +130,7 @@ class MentalMathsGameActivity : AppCompatActivity() {
             score_textView.text = "Your score: $no_of_correct"
             val ok_button = view.findViewById<Button>(R.id.ok_button_score)
             builder.setView(view)
+            builder.setCancelable(false)
             val dialog = builder.create()
             ok_button.setOnClickListener {
                 finish()

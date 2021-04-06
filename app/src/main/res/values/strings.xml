@@ -3,7 +3,7 @@
     <string name="help">Help</string>
     <string name="start_game">Start Game</string>
     <string name="high_scores">High scores</string>
-    <string name="play_now">Play now</string>
+    <string name="play_now">Play Now</string>
     <string name="tic_tac_toe">"1. A simple connect three game.\n\n"
         "2. You need to connect your chosen character in a way that they are three consecutive in number either vertically, horizontally or diagonally.\n\n"
         "3. The one who does it first wins the game."

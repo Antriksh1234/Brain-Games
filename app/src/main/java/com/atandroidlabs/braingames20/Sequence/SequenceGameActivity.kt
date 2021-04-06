@@ -86,6 +86,7 @@ class SequenceGameActivity : AppCompatActivity() {
                     alert_dialog_view.findViewById<TextView>(R.id.score_show_alert_dialog)
                 score_show.text = "Score: $scores"
                 builder.setView(alert_dialog_view)
+                builder.setCancelable(false)
                 dialog = builder.create()
                 save_high_score_button.setOnClickListener {
                     val name = nameText.text.toString()
@@ -118,6 +119,7 @@ class SequenceGameActivity : AppCompatActivity() {
                 val score_show = alert_dialog_view.findViewById<TextView>(R.id.show_usual_score)
                 score_show.text = "Your score: $scores"
                 builder.setView(alert_dialog_view)
+                builder.setCancelable(false)
                 dialog = builder.create()
                 ok_button.setOnClickListener {
                     dialog.dismiss()

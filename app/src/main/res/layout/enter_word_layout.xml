@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/done_writing"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/button_selector_plain"
         android:textColor="@android:color/white"
         android:text="@string/done"
         android:fontFamily="@font/paytone"

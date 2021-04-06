@@ -15,6 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
         <TextView
+            android:fontFamily="@font/paytone"
             android:id="@+id/show_usual_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,10 +26,11 @@
             android:padding="30dp" />
 
         <Button
+            android:fontFamily="@font/paytone"
             android:id="@+id/ok_button_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"
+            android:background="@drawable/button_selector_plain"
             android:text="OK"
             android:textColor="@android:color/white"
             android:textSize="18sp" />

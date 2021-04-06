@@ -53,7 +53,7 @@
 
     <Button
         android:id="@+id/save_high_score"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/button_selector_plain"
         android:textColor="@android:color/white"
         android:text="Save"
         android:fontFamily="@font/paytone"

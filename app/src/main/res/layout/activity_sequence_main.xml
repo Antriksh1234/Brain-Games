@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:text="@string/seqeunce_game_name"
-        android:textColor="@color/cardview_dark_background"
+        android:forceDarkAllowed="false"
+        android:textColor="@color/black"
         android:fontFamily="@font/paytone"
         android:textSize="40sp"
         android:layout_marginTop="30dp"
@@ -32,7 +33,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <Button
-            android:fontFamily="@font/paytone"
+            android:textStyle="bold"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:background="@drawable/button_selector"
@@ -43,7 +44,7 @@
             android:text="Start"  />
 
         <Button
-            android:fontFamily="@font/paytone"
+            android:textStyle="bold"
             android:textSize="18sp"
             android:background="@drawable/button_selector"
             android:textAllCaps="false"
@@ -55,7 +56,7 @@
             android:text="High Scores" />
 
         <Button
-            android:fontFamily="@font/paytone"
+            android:textStyle="bold"
             android:textSize="18sp"
             android:background="@drawable/button_selector"
             android:textAllCaps="false"

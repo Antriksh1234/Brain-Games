@@ -344,6 +344,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
         builder.setView(view)
         val dialog = builder.create()
         dialog.setCanceledOnTouchOutside(false)
+        dialog.setCancelable(false)
         ok_btn.setOnClickListener {
             dialog.dismiss()
             selectAndOperateMode()
@@ -467,6 +468,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
         builder.setView(view)
         val dialog = builder.create()
         dialog.setCanceledOnTouchOutside(false)
+        dialog.setCancelable(false)
         doneBtn.setOnClickListener {
             val string = editText.text.toString().trim()
             if (string.contentEquals("")) {

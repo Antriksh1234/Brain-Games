@@ -3,15 +3,15 @@ package com.atandroidlabs.braingames20
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.os.Handler
 
 class SplashScreenActivity : Activity() {
 
-    private lateinit var handler: Handler
-    private lateinit var runnable: Runnable
+    private lateinit var timer: CountDownTimer
 
     override fun onBackPressed() {
-        handler.removeCallbacks(runnable)
+        timer.cancel()
         finish()
     }
 
@@ -19,12 +19,17 @@ class SplashScreenActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        handler = Handler()
-        runnable = Runnable{
-            finish()
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+        timer = object : CountDownTimer(1500, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                //Wait for 1.5 seconds
+            }
+
+            override fun onFinish() {
+                val intent: Intent = Intent(applicationContext, MainActivity::class.java)
+                startActivity(intent)
+            }
         }
-        handler.postDelayed(runnable, 1000)
+
+        timer.start()
     }
 }
