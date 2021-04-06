@@ -2,7 +2,7 @@
     <string name="app_name">Brain Games</string>
     <string name="help">Help</string>
     <string name="start_game">Start Game</string>
-    <string name="high_scores">High scores</string>
+    <string name="high_scores">High Scores</string>
     <string name="play_now">Play Now</string>
     <string name="tic_tac_toe">"1. A simple connect three game.\n\n"
         "2. You need to connect your chosen character in a way that they are three consecutive in number either vertically, horizontally or diagonally.\n\n"
@@ -50,7 +50,7 @@
     <string name="difficult_mode">Difficult Mode</string>
     <string name="easy_mode">Easy Mode</string>
     <string name="guess_the_celeb_game_name">Guess The Celeb</string>
-    <string name="seqeunce_game_name">Seqeunce</string>
+    <string name="seqeunce_game_name">Sequence</string>
     <string name="match_the_pair_game_name">Match The Pair</string>
     <string name="mental_maths_game_name">Mental Maths</string>
     <string name="play_with_friends">Play With Friends</string>

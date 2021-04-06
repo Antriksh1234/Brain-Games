@@ -89,7 +89,7 @@ class SequenceGameActivity : AppCompatActivity() {
                 builder.setCancelable(false)
                 dialog = builder.create()
                 save_high_score_button.setOnClickListener {
-                    val name = nameText.text.toString()
+                    var name = nameText.text.toString().trim()
                     if (name.contentEquals("")) {
                         Toast.makeText(
                             this@SequenceGameActivity,
@@ -101,16 +101,17 @@ class SequenceGameActivity : AppCompatActivity() {
                         if (scores > high_score) {
                             database.execSQL("DELETE FROM sequence WHERE score = $high_score")
                         }
+                        name = name.trim().capitalize(Locale.ROOT)
                         database.execSQL("INSERT INTO  sequence(name, score) VALUES('$name',$scores)")
+                        dialog.dismiss()
+                        finish()
+                        Toast.makeText(
+                            this@SequenceGameActivity,
+                            "High Score added",
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
                     }
-                    dialog.dismiss()
-                    finish()
-                    Toast.makeText(
-                        this@SequenceGameActivity,
-                        "High Score added",
-                        Toast.LENGTH_SHORT
-                    )
-                        .show()
                 }
             } else {
                 builder = AlertDialog.Builder(this@SequenceGameActivity)

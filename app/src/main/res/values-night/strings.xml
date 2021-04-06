@@ -2,6 +2,6 @@
 <resources>
     <string name="easy_mode">Easy Mode</string>
     <string name="guess_the_celeb_game_name">Guess The Celeb</string>
-    <string name="seqeunce_game_name">Seqeunce</string>
+    <string name="seqeunce_game_name">Sequence</string>
     <string name="mental_maths_game_name">Mental Maths</string>
 </resources>

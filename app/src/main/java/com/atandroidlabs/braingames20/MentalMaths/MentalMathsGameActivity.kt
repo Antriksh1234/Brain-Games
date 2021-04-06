@@ -104,7 +104,7 @@ class MentalMathsGameActivity : AppCompatActivity() {
             builder.setCancelable(false)
             val dialog: AlertDialog = builder.create()
             save_button.setOnClickListener {
-                if (nameText.text.isEmpty()) {
+                if (nameText.text.toString().trim().isEmpty()) {
                     Toast.makeText(
                         this@MentalMathsGameActivity,
                         "Enter a name!",
@@ -112,15 +112,16 @@ class MentalMathsGameActivity : AppCompatActivity() {
                     )
                         .show()
                 } else {
-                    val name = nameText.text.toString()
+                    var name = nameText.text.toString().trim()
                     if (no_of_correct > high_score) {
                         database.execSQL("DELETE FROM mental_maths WHERE score = $high_score")
                     }
+                    name = name.capitalize(Locale.ENGLISH)
                     database.execSQL("INSERT INTO mental_maths(name,mode,score) VALUES ('$name', '$level', $no_of_correct)")
                     //"INSERT INTO mental_maths" + "(name,mode,score) VALUES('" + name + "','" + level.toString() + "'," + no_of_correct.toString() + ")"
+                    dialog.dismiss()
+                    finish()
                 }
-                dialog.dismiss()
-                finish()
             }
             dialog.show()
         } else {
