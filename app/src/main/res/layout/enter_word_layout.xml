@@ -53,19 +53,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/word_editText" />
 
-    <Button
-        android:id="@+id/done_writing"
-        android:background="@drawable/button_selector_plain"
-        android:textColor="@android:color/white"
-        android:text="@string/done"
-        android:fontFamily="@font/paytone"
-        android:textAllCaps="false"
-        android:textSize="18sp"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/exit_game_word"
+            android:layout_width="match_parent"
+            android:layout_weight="50"
+            android:layout_height="wrap_content"
+            android:text="Exit game"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/button_selector_plain"
+            android:fontFamily="@font/paytone"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:layout_marginStart="4dp"
+            android:id="@+id/done_writing"
+            android:background="@drawable/button_selector_plain"
+            android:textColor="@android:color/white"
+            android:text="@string/done"
+            android:fontFamily="@font/paytone"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

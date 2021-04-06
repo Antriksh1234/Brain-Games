@@ -465,6 +465,7 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
         val view: View = LayoutInflater.from(this).inflate(R.layout.enter_word_layout, null, false)
         val editText: EditText = view.findViewById(R.id.word_editText)
         val doneBtn: Button = view.findViewById(R.id.done_writing)
+        val exitGame: Button = view.findViewById(R.id.exit_game_word)
         builder.setView(view)
         val dialog = builder.create()
         dialog.setCanceledOnTouchOutside(false)
@@ -482,6 +483,9 @@ class WhatsTheWordGameActivity : AppCompatActivity() {
                 changeTextView()
                 setImageViews()
             }
+        }
+        exitGame.setOnClickListener {
+            finish()
         }
         dialog.show()
     }
